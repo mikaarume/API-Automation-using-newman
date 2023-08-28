@@ -1,0 +1,701 @@
+{
+	"info": {
+		"_postman_id": "112e68ac-9092-4d23-857b-7ab8209ddbd6",
+		"name": "Kasiraja",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "14270494"
+	},
+	"item": [
+		{
+			"name": "Registration",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"toko Mika\",\n    \"email\": \"mikaarume@gmail.com\",\n    \"password\": \"Surabaya05$\"\n}\n\n\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://kasir-api.belajarqa.com/registration"
+			},
+			"response": [
+				{
+					"name": "Registration",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"toko Mika\",\n    \"email\": \"mikaarume@gmail.com\",\n    \"password\": \"Surabaya05$\"\n}\n\n\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://kasir-api.belajarqa.com/registration"
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "content-type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "vary",
+							"value": "origin,User-Agent"
+						},
+						{
+							"key": "access-control-expose-headers",
+							"value": "WWW-Authenticate,Server-Authorization"
+						},
+						{
+							"key": "cache-control",
+							"value": "no-cache"
+						},
+						{
+							"key": "content-length",
+							"value": "116"
+						},
+						{
+							"key": "date",
+							"value": "Mon, 26 Jun 2023 02:44:57 GMT"
+						},
+						{
+							"key": "server",
+							"value": "LiteSpeed"
+						},
+						{
+							"key": "x-powered-by",
+							"value": "Niagahoster"
+						},
+						{
+							"key": "strict-transport-security",
+							"value": "max-age=31536000; includeSubDomains; preload"
+						},
+						{
+							"key": "x-xss-protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "x-content-type-options",
+							"value": "nosniff"
+						},
+						{
+							"key": "alt-svc",
+							"value": "h3=\":443\"; ma=2592000, h3-29=\":443\"; ma=2592000, h3-Q050=\":443\"; ma=2592000, h3-Q046=\":443\"; ma=2592000, h3-Q043=\":443\"; ma=2592000, quic=\":443\"; ma=2592000; v=\"43,46\""
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"success\",\n    \"message\": \"Toko berhasil didaftarkan\",\n    \"data\": {\n        \"name\": \"toko Mika\",\n        \"email\": \"mikaarume@gmail.com\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Auth-Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n   \"email\": \"mikaarume@gmail.com\",\n   \"password\": \"Surabaya05$\"\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://kasir-api.belajarqa.com/authentications"
+			},
+			"response": [
+				{
+					"name": "Login",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n   \"email\": \"mikaarume@gmail.com\",\n   \"password\": \"Surabaya05$\"\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://kasir-api.belajarqa.com/authentications"
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "content-type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "vary",
+							"value": "origin,Accept-Encoding,User-Agent"
+						},
+						{
+							"key": "access-control-expose-headers",
+							"value": "WWW-Authenticate,Server-Authorization"
+						},
+						{
+							"key": "cache-control",
+							"value": "no-cache"
+						},
+						{
+							"key": "content-length",
+							"value": "492"
+						},
+						{
+							"key": "content-encoding",
+							"value": "br"
+						},
+						{
+							"key": "date",
+							"value": "Mon, 26 Jun 2023 02:51:34 GMT"
+						},
+						{
+							"key": "server",
+							"value": "LiteSpeed"
+						},
+						{
+							"key": "x-powered-by",
+							"value": "Niagahoster"
+						},
+						{
+							"key": "strict-transport-security",
+							"value": "max-age=31536000; includeSubDomains; preload"
+						},
+						{
+							"key": "x-xss-protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "x-content-type-options",
+							"value": "nosniff"
+						},
+						{
+							"key": "alt-svc",
+							"value": "h3=\":443\"; ma=2592000, h3-29=\":443\"; ma=2592000, h3-Q050=\":443\"; ma=2592000, h3-Q046=\":443\"; ma=2592000, h3-Q043=\":443\"; ma=2592000, quic=\":443\"; ma=2592000; v=\"43,46\""
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"success\",\n    \"message\": \"Authentication berhasil ditambahkan\",\n    \"data\": {\n        \"accessToken\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjA0YzAzNTIzLWQ1MDQtNDNmNi04NjVjLWExMmJjOTZlZGM2MyIsImNvbXBhbnlJZCI6ImY0ZWU5ZTRiLTc3MmItNDk0ZC05ZjNiLTY0YTBiOTZlZWUwMyIsImlhdCI6MTY4Nzc0Nzg5NH0.v8YS4kl_V84izWv9GlLi23mXkjYEZZMWaYelacS2jpA\",\n        \"refreshToken\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjA0YzAzNTIzLWQ1MDQtNDNmNi04NjVjLWExMmJjOTZlZGM2MyIsImNvbXBhbnlJZCI6ImY0ZWU5ZTRiLTc3MmItNDk0ZC05ZjNiLTY0YTBiOTZlZWUwMyIsImlhdCI6MTY4Nzc0Nzg5NH0.3VFCmwEN2clJkuwVebqDgsjMvr0FOQ_1VYB-RXCGDzc\",\n        \"user\": {\n            \"id\": \"04c03523-d504-43f6-865c-a12bc96edc63\",\n            \"name\": \"toko Mika\",\n            \"role\": \"admin\",\n            \"email\": \"mikaarume@gmail.com\",\n            \"officeId\": \"a8048462-9e03-4ff3-98d6-8b57922cdc4a\",\n            \"companyId\": \"f4ee9e4b-772b-494d-9f3b-64a0b96eee03\",\n            \"company_name\": \"toko Mika\"\n        }\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Add Categories",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjA0YzAzNTIzLWQ1MDQtNDNmNi04NjVjLWExMmJjOTZlZGM2MyIsImNvbXBhbnlJZCI6ImY0ZWU5ZTRiLTc3MmItNDk0ZC05ZjNiLTY0YTBiOTZlZWUwMyIsImlhdCI6MTY4Nzc0Nzg5NH0.v8YS4kl_V84izWv9GlLi23mXkjYEZZMWaYelacS2jpA"
+					}
+				},
+				"method": "GET",
+				"header": [
+					{
+						"warning": "This is a duplicate header and will be overridden by the Authorization header generated by Postman.",
+						"key": "Authorization",
+						"value": "Bearer {accessToken}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n   \"name\": \"makanan\",\n   \"description\": \"supermie\"\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://kasir-api.belajarqa.com/categories"
+			},
+			"response": [
+				{
+					"name": "Add Categories",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"warning": "This is a duplicate header and will be overridden by the Authorization header generated by Postman.",
+								"key": "Authorization",
+								"value": "Bearer {accessToken}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n   \"name\": \"makanan\",\n   \"description\": \"supermie\"\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://kasir-api.belajarqa.com/categories"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "content-type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "vary",
+							"value": "origin,User-Agent"
+						},
+						{
+							"key": "access-control-expose-headers",
+							"value": "WWW-Authenticate,Server-Authorization"
+						},
+						{
+							"key": "cache-control",
+							"value": "no-cache"
+						},
+						{
+							"key": "accept-ranges",
+							"value": "bytes"
+						},
+						{
+							"key": "content-length",
+							"value": "166"
+						},
+						{
+							"key": "date",
+							"value": "Mon, 26 Jun 2023 03:06:44 GMT"
+						},
+						{
+							"key": "server",
+							"value": "LiteSpeed"
+						},
+						{
+							"key": "x-powered-by",
+							"value": "Niagahoster"
+						},
+						{
+							"key": "strict-transport-security",
+							"value": "max-age=31536000; includeSubDomains; preload"
+						},
+						{
+							"key": "x-xss-protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "x-content-type-options",
+							"value": "nosniff"
+						},
+						{
+							"key": "alt-svc",
+							"value": "h3=\":443\"; ma=2592000, h3-29=\":443\"; ma=2592000, h3-Q050=\":443\"; ma=2592000, h3-Q046=\":443\"; ma=2592000, h3-Q043=\":443\"; ma=2592000, quic=\":443\"; ma=2592000; v=\"43,46\""
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"success\",\n    \"data\": {\n        \"categories\": [\n            {\n                \"id\": \"6924f04e-c765-4b56-bfef-a7ef07e6b131\",\n                \"name\": \"Umum\",\n                \"description\": null\n            }\n        ],\n        \"meta\": {\n            \"totalPages\": 1,\n            \"total\": 1,\n            \"page\": 1\n        }\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Add Customers",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjA0YzAzNTIzLWQ1MDQtNDNmNi04NjVjLWExMmJjOTZlZGM2MyIsImNvbXBhbnlJZCI6ImY0ZWU5ZTRiLTc3MmItNDk0ZC05ZjNiLTY0YTBiOTZlZWUwMyIsImlhdCI6MTY4Nzc0Nzg5NH0.v8YS4kl_V84izWv9GlLi23mXkjYEZZMWaYelacS2jpA"
+					}
+				},
+				"method": "POST",
+				"header": [
+					{
+						"warning": "This is a duplicate header and will be overridden by the Authorization header generated by Postman.",
+						"key": "Authorization",
+						"value": "Bearer {accessToken}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n   \"name\": \"Vinda\",\n   \"phone\": \"085736258976\"\n   \"address\": \"Depok\"\n   \"description\": \"Vinda anak Pak Eko\"\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://kasir-api.belajarqa.com/customers"
+			},
+			"response": [
+				{
+					"name": "Add Customers",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"warning": "This is a duplicate header and will be overridden by the Authorization header generated by Postman.",
+								"key": "Authorization",
+								"value": "Bearer {accessToken}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n   \"name\": \"Vinda\",\n   \"phone\": \"085736258976\"\n   \"address\": \"Depok\"\n   \"description\": \"Vinda anak Pak Eko\"\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://kasir-api.belajarqa.com/customers"
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "content-type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "vary",
+							"value": "origin,User-Agent"
+						},
+						{
+							"key": "access-control-expose-headers",
+							"value": "WWW-Authenticate,Server-Authorization"
+						},
+						{
+							"key": "cache-control",
+							"value": "no-cache"
+						},
+						{
+							"key": "content-length",
+							"value": "88"
+						},
+						{
+							"key": "date",
+							"value": "Mon, 26 Jun 2023 03:19:09 GMT"
+						},
+						{
+							"key": "server",
+							"value": "LiteSpeed"
+						},
+						{
+							"key": "x-powered-by",
+							"value": "Niagahoster"
+						},
+						{
+							"key": "strict-transport-security",
+							"value": "max-age=31536000; includeSubDomains; preload"
+						},
+						{
+							"key": "x-xss-protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "x-content-type-options",
+							"value": "nosniff"
+						},
+						{
+							"key": "alt-svc",
+							"value": "h3=\":443\"; ma=2592000, h3-29=\":443\"; ma=2592000, h3-Q050=\":443\"; ma=2592000, h3-Q046=\":443\"; ma=2592000, h3-Q043=\":443\"; ma=2592000, quic=\":443\"; ma=2592000; v=\"43,46\""
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"statusCode\": 400,\n    \"error\": \"Bad Request\",\n    \"message\": \"Invalid request payload JSON format\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Add Product",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjA0YzAzNTIzLWQ1MDQtNDNmNi04NjVjLWExMmJjOTZlZGM2MyIsImNvbXBhbnlJZCI6ImY0ZWU5ZTRiLTc3MmItNDk0ZC05ZjNiLTY0YTBiOTZlZWUwMyIsImlhdCI6MTY4Nzc0Nzg5NH0.v8YS4kl_V84izWv9GlLi23mXkjYEZZMWaYelacS2jpA"
+					}
+				},
+				"method": "POST",
+				"header": [
+					{
+						"warning": "This is a duplicate header and will be overridden by the Authorization header generated by Postman.",
+						"key": "Authorization",
+						"value": "Bearer {accessToken}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n   \"category_id\" : \"811f547e-a24e-4f94-bfe1-b7ed7d11c03f\",\n   \"code\": \"A314ASDDFIER3432\",\n   \"name\": \"taro\",\n   \"price\": \"5000\",\n   \"cost\": \"2500\",\n   \"stock\": \"7\"\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://kasir-api.belajarqa.com/products"
+			},
+			"response": [
+				{
+					"name": "Add Product",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"warning": "This is a duplicate header and will be overridden by the Authorization header generated by Postman.",
+								"key": "Authorization",
+								"value": "Bearer {accessToken}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n   \"category_id\" : \"811f547e-a24e-4f94-bfe1-b7ed7d11c03f\",\n   \"code\": \"A314ASDDFIER3432\",\n   \"name\": \"taro\",\n   \"price\": \"5000\",\n   \"cost\": \"2500\",\n   \"stock\": \"7\"\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://kasir-api.belajarqa.com/products"
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "content-type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "vary",
+							"value": "origin,User-Agent"
+						},
+						{
+							"key": "access-control-expose-headers",
+							"value": "WWW-Authenticate,Server-Authorization"
+						},
+						{
+							"key": "cache-control",
+							"value": "no-cache"
+						},
+						{
+							"key": "content-length",
+							"value": "135"
+						},
+						{
+							"key": "date",
+							"value": "Mon, 26 Jun 2023 03:24:28 GMT"
+						},
+						{
+							"key": "server",
+							"value": "LiteSpeed"
+						},
+						{
+							"key": "x-powered-by",
+							"value": "Niagahoster"
+						},
+						{
+							"key": "strict-transport-security",
+							"value": "max-age=31536000; includeSubDomains; preload"
+						},
+						{
+							"key": "x-xss-protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "x-content-type-options",
+							"value": "nosniff"
+						},
+						{
+							"key": "alt-svc",
+							"value": "h3=\":443\"; ma=2592000, h3-29=\":443\"; ma=2592000, h3-Q050=\":443\"; ma=2592000, h3-Q046=\":443\"; ma=2592000, h3-Q043=\":443\"; ma=2592000, quic=\":443\"; ma=2592000; v=\"43,46\""
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"success\",\n    \"message\": \"Product berhasil ditambahkan\",\n    \"data\": {\n        \"productId\": \"2cdd0df6-0c16-432e-bac6-d89c5cac658b\",\n        \"name\": \"taro\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Add Sales",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjA0YzAzNTIzLWQ1MDQtNDNmNi04NjVjLWExMmJjOTZlZGM2MyIsImNvbXBhbnlJZCI6ImY0ZWU5ZTRiLTc3MmItNDk0ZC05ZjNiLTY0YTBiOTZlZWUwMyIsImlhdCI6MTY4Nzc0Nzg5NH0.v8YS4kl_V84izWv9GlLi23mXkjYEZZMWaYelacS2jpA"
+					}
+				},
+				"method": "POST",
+				"header": [
+					{
+						"warning": "This is a duplicate header and will be overridden by the Authorization header generated by Postman.",
+						"key": "Authorization",
+						"value": "Bearer {accessToken}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n   \"officeId\": \"2f458834-0b21-466f-9f56-d35a8ed6f6ba\",\n   \"customerId\": \"811f547e-a24e-4f94-bfe1-b7ed7d11c03f\",\n   \"date\": \"2023-02-02\",\n   \"invoice\": \"INV002\",\n   \"amount\": 7000,\n   \"discount\": 0,\n   \"description\": \"Pembelian kedua\",\n   \"items\" : [\n       {\n           \"productId\": \"681fa14f-8bed-4bee-a4a3-5c15a9e3fc5d\",\n           \"quantity\": 1,\n           \"price\": 7000\n       }\n   ]\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://kasir-api.belajarqa.com/sales"
+			},
+			"response": [
+				{
+					"name": "Add Sales",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"warning": "This is a duplicate header and will be overridden by the Authorization header generated by Postman.",
+								"key": "Authorization",
+								"value": "Bearer {accessToken}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n   \"officeId\": \"2f458834-0b21-466f-9f56-d35a8ed6f6ba\",\n   \"customerId\": \"811f547e-a24e-4f94-bfe1-b7ed7d11c03f\",\n   \"date\": \"2023-02-02\",\n   \"invoice\": \"INV002\",\n   \"amount\": 7000,\n   \"discount\": 0,\n   \"description\": \"Pembelian kedua\",\n   \"items\" : [\n       {\n           \"productId\": \"681fa14f-8bed-4bee-a4a3-5c15a9e3fc5d\",\n           \"quantity\": 1,\n           \"price\": 7000\n       }\n   ]\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://kasir-api.belajarqa.com/sales"
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "content-type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "vary",
+							"value": "origin,User-Agent"
+						},
+						{
+							"key": "access-control-expose-headers",
+							"value": "WWW-Authenticate,Server-Authorization"
+						},
+						{
+							"key": "cache-control",
+							"value": "no-cache"
+						},
+						{
+							"key": "content-length",
+							"value": "111"
+						},
+						{
+							"key": "date",
+							"value": "Mon, 26 Jun 2023 03:31:16 GMT"
+						},
+						{
+							"key": "server",
+							"value": "LiteSpeed"
+						},
+						{
+							"key": "x-powered-by",
+							"value": "Niagahoster"
+						},
+						{
+							"key": "strict-transport-security",
+							"value": "max-age=31536000; includeSubDomains; preload"
+						},
+						{
+							"key": "x-xss-protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "x-content-type-options",
+							"value": "nosniff"
+						},
+						{
+							"key": "alt-svc",
+							"value": "h3=\":443\"; ma=2592000, h3-29=\":443\"; ma=2592000, h3-Q050=\":443\"; ma=2592000, h3-Q046=\":443\"; ma=2592000, h3-Q043=\":443\"; ma=2592000, quic=\":443\"; ma=2592000; v=\"43,46\""
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"success\",\n    \"message\": \"transaksi ditambahkan\",\n    \"data\": {\n        \"saleId\": \"091aed6b-1cdd-471f-a411-0e53eec86bfe\"\n    }\n}"
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "urltoko",
+			"value": "https://kasir-api.belajarqa.com"
+		}
+	]
+}
