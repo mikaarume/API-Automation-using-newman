@@ -1,9 +1,9 @@
 # Postman
 
 This project about Postman Automation
-to run this project please use command "newman run kasiraja.postman_collection.json"
-
-Here I use newman to run API Automation, here are the steps:
+Firstly I create collection at Postman API
+I add the request then I use newman as API Automation
+Here are the steps:
 Install Node.js and npm: Newman requires Node.js and npm (Node Package Manager) to be installed on your system. You can download and install them from the official Node.js website: https://nodejs.org/
 
 Install Newman: After installing Node.js and npm, open your terminal or command prompt and run the following command to install Newman globally:
